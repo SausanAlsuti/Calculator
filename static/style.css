@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for Centering the Content */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1.title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Calculator Container */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input and Select Styles */
+input[type="number"], select {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Input Focus */
+input[type="number"]:focus, select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover and Active States */
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1.title {
+        font-size: 2rem;
+    }
+
+    input[type="number"], select, button {
+        font-size: 1rem;
+    }
+}
+/* Result Display */
+h2.result {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+/* Hover Effect for Result */
+h2.result:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.05);
+}
