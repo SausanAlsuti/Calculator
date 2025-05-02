@@ -114,3 +114,25 @@ h2.result:hover {
     background-color: #c8e6c9;
     transform: scale(1.05);
 }
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input[type="number"], select {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
